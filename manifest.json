@@ -1,0 +1,12 @@
+{
+	"manifest_version": 2,
+
+	"name": "Code snippets",
+	"description": "Extension that enables users to save and tag code snippets and easily navigate through them",
+	"version": "1.0",
+	
+	"permissions": [
+		"downloads"
+	]
+}
+
