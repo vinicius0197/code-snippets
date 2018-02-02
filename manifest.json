@@ -1,14 +1,19 @@
 {
 	"manifest_version": 2,
-
 	"name": "Code snippets",
 	"description": "Extension that enables users to save and tag code snippets and easily navigate through them",
 	"version": "1.0",
 	"browser_action": {
+		"default_title": "Code Snippets",
 		"default_popup": "interface.html"
 	},
+	"content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"js": ["selection.js"]
+		}
+	],
 	"permissions": [
-		"activeTab"
+		"tabs"
 	]
 }
-

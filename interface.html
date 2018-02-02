@@ -4,30 +4,17 @@
 	capture that text and ask the user for giving some tags and bookmarks. If they click without having text selected, they can
 	navigate through all other code snippets that they've saved.
 -->
-
  <html>
 	 <head>
 		 <title> Code Snippets </title>
-		 <style type ="text/css">
-			body {
-				margin: 10px;
-				white-space: nowrap;
-			}
-
-			h1 {
-				font-size: 15px;
-			}
-
-			#container {
-				align-items: center;
-				display: flex;
-				justify-content: space-between;
-			}
-		 </style>
-
+		<style>
+			body {width: 300px;}
+			textarea {width: 250px; heigth: 100px;}
+		</style>
+		<script src="popup.js"></script>
 	 </head>
-
-	 <body> </body>
-
+	 <body>
+		<textarea id="text"> </textarea>
+		<button id="myButton"> Paste Selection </button>
+	 </body>
  </html>
-
