@@ -8,13 +8,20 @@
 	 <head>
 		 <title> Code Snippets </title>
 		<style>
-			body {width: 300px;}
-			textarea {width: 250px; heigth: 100px;}
+			body {width: 450px;}
+			textarea {
+				border: 0 none white;
+				overflow: hidden;
+				padding: 0;
+				outline: none;
+				width: 400px;
+				background-color: #D0D0D0;
+			}
 		</style>
 		<script src="popup.js"></script>
 	 </head>
 	 <body>
-		<textarea id="text"> </textarea>
-		<button id="myButton"> Paste Selection </button>
+		<textarea rows="1" style="height:1em;" id= "text"> </textarea>
+		<button id="myButton"> Paste Code </button>
 	 </body>
  </html>
